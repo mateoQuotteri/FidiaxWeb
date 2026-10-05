@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FIDIAX España · Gestión documental y coordinación operativa inmobiliaria</title>
+<meta name="description" content="Gestión documental, coordinación operativa y control de procesos en operaciones inmobiliarias en España. Acompañamos a propietarios, compradores, inversores y agencias.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20440%20432%22%3E%3Cpath%20fill%3D%22%23777%22%20d%3D%22M430.4%20420.9C421.7%20411.7%20403.6%20398.8%20389.1%20391.6C361.2%20377.6%20336.1%20373.3%20269.0%20371.0C223.8%20369.5%20202.1%20366.8%20176.7%20359.4C118.9%20342.6%2070.2%20306.3%2049.1%20264.2C41.4%20248.9%2036.0%20229.2%2036.0%20216.5C36.0%20208.2%2037.8%20207.8%2040.5%20215.6C43.3%20223.9%2052.0%20239.1%2059.9%20249.5C91.9%20291.4%20155.1%20323.1%20239.5%20339.4C252.3%20341.9%20259.4%20343.0%20304.0%20349.0C316.4%20350.7%20331.0%20353.0%20336.5%20354.2C371.6%20361.4%20401.6%20378.4%20423.2%20403.4C429.7%20410.9%20436.0%20420.5%20436.0%20422.9C436.0%20425.0%20433.4%20424.0%20430.4%20420.9ZM180.5%20310.4C121.4%20289.8%2080.8%20252.6%2063.7%20203.4C57.0%20184.1%2055.6%20174.4%2055.5%20148.0C55.5%20127.0%2055.7%20123.4%2057.8%20114.1C63.9%2087.1%2074.8%2063.4%2087.7%2049.0C94.4%2041.6%20101.0%2038.8%20101.0%2043.5C101.0%2044.4%2098.1%2054.8%2094.5%2066.6C83.0%20104.8%2080.4%20121.8%2081.3%20151.5C81.8%20166.3%2082.4%20173.1%2084.4%20182.2C92.4%20219.7%20111.4%20251.6%20141.7%20278.5C152.4%20288.0%20173.9%20302.8%20183.8%20307.4C187.2%20309.0%20190.0%20311.0%20190.0%20311.7C190.0%20313.4%20188.7%20313.3%20180.5%20310.4ZM157.6%20273.0C130.4%20244.5%20113.3%20209.3%20108.5%20172.0C105.4%20148.0%20107.6%20127.0%20115.7%20103.5C130.2%2061.8%20159.7%2025.8%20192.6%209.9C200.2%206.2%20212.4%203.0%20213.7%204.4C215.3%206.0%20210.3%2012.5%20196.3%2027.3C165.4%2059.8%20150.1%2083.6%20139.7%20115.1C133.2%20134.8%20131.5%20145.8%20131.6%20169.0C131.6%20187.0%20132.0%20191.0%20134.2%20202.0C139.3%20226.2%20149.6%20251.6%20162.4%20270.9C165.5%20275.5%20168.0%20279.7%20168.0%20280.2C168.0%20282.6%20164.5%20280.2%20157.6%20273.0ZM168.3%20252.8C153.0%20208.8%20152.0%20160.4%20165.4%20124.6C180.1%2085.6%20212.3%2051.3%20251.2%2033.0C270.0%2024.2%20292.7%2018.6%20309.5%2018.7C321.8%2018.7%20327.5%2020.4%20327.5%2023.9C327.5%2026.1%20326.4%2026.8%20319.0%2029.8C276.3%2046.7%20256.7%2056.6%20240.2%2069.4C191.4%20107.1%20167.3%20158.8%20169.3%20221.5C169.8%20236.0%20171.5%20251.1%20173.7%20259.8C174.0%20261.3%20173.8%20262.0%20172.8%20262.0C172.0%20262.0%20170.2%20258.4%20168.3%20252.8Z%22/%3E%3Cpath%20fill%3D%22%23bbb%22%20d%3D%22M420.5%20426.3C417.0%20423.6%20398.8%20415.3%20390.3%20412.6C373.9%20407.5%20363.7%20405.9%20343.0%20405.3C326.7%20404.8%20320.6%20405.1%20306.0%20406.9C296.4%20408.1%20286.2%20409.5%20283.5%20410.0C275.1%20411.7%20236.2%20417.8%20225.0%20419.2C219.0%20419.9%20205.3%20420.5%20193.0%20420.5C169.9%20420.4%20157.0%20419.0%20136.0%20414.3C89.7%20404.0%2046.2%20378.2%2023.4%20347.4C13.9%20334.6%204.0%20314.0%204.0%20307.0C4.0%20302.7%207.9%20302.8%2010.4%20307.1C11.4%20308.8%2015.6%20314.2%2019.6%20319.0C51.3%20356.8%20110.2%20380.2%20190.5%20387.0C206.5%20388.4%20251.9%20388.4%20269.5%20387.1C276.6%20386.5%20291.0%20385.5%20301.3%20384.9C352.7%20381.6%20392.6%20392.8%20422.2%20419.0C427.6%20423.7%20428.8%20428.0%20424.8%20428.0C423.5%20428.0%20421.6%20427.2%20420.5%20426.3Z%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   FIDIAX — sistema visual
+   Escala de grises tomada del logo: negro, gris acero (#777),
+   gris plata (#D9D9D9) y blanco.
+   Tipografía: Bodoni Moda (títulos) + Jost (texto), Jost
+   acompaña la geometría del logotipo.
+   ========================================================= */
+:root{
+  --white:#FFFFFF;
+  --mist:#F3F3F2;
+  --silver:#D9D9D9;
+  --steel:#777777;
+  --graphite:#3A3A3A;
+  --black:#000000;
+  --line:rgba(0,0,0,.12);
+  --line-inv:rgba(255,255,255,.18);
+
+  --serif:"Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --sans:"Jost", "Futura", "Century Gothic", -apple-system, "Segoe UI", sans-serif;
+
+  --wrap:1200px;
+  --gutter:clamp(1.25rem, 4vw, 3rem);
+  --section:clamp(5rem, 10vw, 8.5rem);
+  --head-h:78px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--head-h);-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--white);color:var(--graphite);
+  font-family:var(--sans);font-weight:400;font-size:1.0625rem;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+strong,b{font-weight:500}
+ul,ol{margin:0;padding:0;list-style:none}
+h1,h2,h3,h4,p{margin:0}
+h1,h2{font-family:var(--serif);font-weight:400;color:var(--black);letter-spacing:-.01em;font-variation-settings:"opsz" 96}
+.banner__big,.choice__name,.steps__n,.kit__price{font-variation-settings:"opsz" 96}
+h3{font-family:var(--serif);font-weight:500;color:var(--black)}
+:focus-visible{outline:2px solid var(--black);outline-offset:3px}
+.inv :focus-visible{outline-color:var(--white)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Huecos que se completan más adelante: si están vacíos no se muestran */
+a[href=""], li:has(> a[href=""]), p:has(> a[href=""]), .creds:not(:has(li:not(:empty))), .creds li:empty{display:none !important}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--gutter)}
+.section{padding-block:var(--section)}
+.section--mist{background:var(--mist)}
+.inv{background:var(--black);color:rgba(255,255,255,.78)}
+.inv h2,.inv h3{color:var(--white)}
+
+/* ---------- logo ---------- */
+.lg-m{fill:var(--steel)}
+.lg-l{fill:var(--silver)}
+.lg-w{fill:var(--black)}
+.inv .lg-l{fill:#4A4A4A}
+.inv .lg-w{fill:var(--white)}
+
+/* ---------- botones ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:.7rem;
+  font:500 .98rem/1 var(--sans);letter-spacing:.01em;text-decoration:none;
+  padding:1.05rem 1.6rem;border:1px solid var(--black);border-radius:2px;
+  background:var(--black);color:var(--white);cursor:pointer;
+  transition:background .25s var(--ease),color .25s var(--ease);
+}
+.btn:hover{background:var(--white);color:var(--black)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.btn--ghost{background:transparent;color:var(--black)}
+.btn--ghost:hover{background:var(--black);color:var(--white)}
+.inv .btn{background:var(--white);color:var(--black);border-color:var(--white)}
+.inv .btn:hover{background:transparent;color:var(--white)}
+.link{
+  font-weight:500;text-decoration:none;color:var(--black);
+  border-bottom:1px solid var(--silver);padding-bottom:2px;transition:border-color .2s;
+}
+.link:hover{border-color:var(--black)}
+
+/* ---------- header ---------- */
+.head{
+  position:sticky;top:0;z-index:50;height:var(--head-h);
+  background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);
+  -webkit-backdrop-filter:saturate(1.4) blur(10px);
+  border-bottom:1px solid transparent;transition:border-color .3s;
+}
+.head.is-scrolled{border-color:var(--line)}
+.head .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:2rem}
+.brand{display:flex;align-items:center;gap:1rem;text-decoration:none}
+.brand .logo{height:38px;width:auto}
+.brand__region{
+  font-size:.95rem;color:var(--steel);letter-spacing:.04em;
+  padding-left:1rem;border-left:1px solid var(--silver);line-height:1.2;
+}
+.nav{display:flex;align-items:center;gap:2rem}
+.nav a{font-size:.95rem;text-decoration:none;color:var(--graphite);transition:color .2s}
+.nav a:hover{color:var(--black)}
+.nav .btn{padding:.75rem 1.15rem;font-size:.9rem;color:var(--white)}
+.nav .btn:hover{color:var(--black)}
+.burger{display:none;width:44px;height:44px;border:0;background:none;cursor:pointer;position:relative}
+.burger span{position:absolute;left:11px;right:11px;height:1.5px;background:var(--black);transition:transform .3s var(--ease),opacity .2s}
+.burger span:nth-child(1){top:16px}.burger span:nth-child(2){top:22px}.burger span:nth-child(3){top:28px}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+@media (max-width:960px){
+  .burger{display:block}
+  .nav{
+    position:fixed;inset:var(--head-h) 0 0 0;background:var(--white);
+    flex-direction:column;align-items:flex-start;gap:0;padding:1.5rem var(--gutter);
+    transform:translateX(100%);transition:transform .35s var(--ease);visibility:hidden;
+  }
+  .nav.is-open{transform:none;visibility:visible}
+  .nav a{font-family:var(--serif);font-size:1.7rem;color:var(--black);padding:.65rem 0;width:100%;border-bottom:1px solid var(--line)}
+  .nav .btn{margin-top:1.5rem;font-family:var(--sans);font-size:1rem;width:auto;border-bottom:1px solid var(--black)}
+  body.nav-open{overflow:hidden}
+}
+@media (max-width:420px){.brand__region{display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding-block:clamp(4.5rem,9vw,7.5rem) clamp(4rem,8vw,6.5rem)}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{
+  font-size:clamp(2.4rem,5.2vw,4.6rem);line-height:1.04;
+}
+.hero h1 span{display:block}
+.hero h1 span + span{color:var(--steel)}
+.hero h1 span + span + span{color:#A6A6A6}
+.hero__lede{margin-top:2.2rem;max-width:56ch;font-size:clamp(1.05rem,1.4vw,1.2rem);color:var(--graphite)}
+.hero__cta{margin-top:2.6rem;display:flex;flex-wrap:wrap;align-items:center;gap:1.75rem}
+.hero .mark{
+  position:absolute;z-index:0;pointer-events:none;
+  right:max(-8vw,-120px);top:50%;transform:translateY(-42%);
+  width:min(40vw,560px);height:auto;opacity:.5;
+}
+.hero .mark .lg-m{fill:var(--silver)}
+.hero .mark .lg-l{fill:#ECECEC}
+@media (max-width:860px){
+  .hero .mark{opacity:.22;width:80vw;right:-25vw;top:auto;bottom:-6%;transform:none}
+}
+
+/* ---------- cinta de palabras clave ---------- */
+.ticker{
+  border-block:1px solid var(--line);overflow:hidden;padding-block:1.15rem;
+  mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+}
+.ticker__track{display:flex;width:max-content;animation:ticker 140s linear infinite}
+.ticker:hover .ticker__track{animation-play-state:paused}
+.ticker ul{display:flex;flex-shrink:0}
+.ticker li{
+  white-space:nowrap;font-size:.98rem;color:var(--graphite);
+  display:flex;align-items:center;
+}
+.ticker li::after{
+  content:"";width:5px;height:5px;margin-inline:1.6rem;background:var(--steel);transform:rotate(45deg);
+}
+@keyframes ticker{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){
+  .ticker{mask-image:none;-webkit-mask-image:none}
+  .ticker__track{animation:none;width:auto;padding-inline:var(--gutter)}
+  .ticker ul{flex-wrap:wrap;row-gap:.4rem;max-width:var(--wrap);margin:0 auto}
+  .ticker ul[aria-hidden]{display:none}
+}
+
+/* ---------- títulos de sección ---------- */
+.sec-head{display:grid;grid-template-columns:7fr 5fr;gap:2rem 4rem;align-items:end;margin-bottom:clamp(3rem,6vw,4.5rem)}
+.sec-head h2{font-size:clamp(2.2rem,4.2vw,3.4rem);line-height:1.06;max-width:16ch}
+.sec-head p{max-width:58ch}
+.sec-head--stack{grid-template-columns:1fr;max-width:820px}
+@media (max-width:860px){.sec-head{grid-template-columns:1fr}}
+
+/* ---------- intro / banda de presentación ---------- */
+.intro{display:grid;grid-template-columns:6fr 6fr;gap:2.5rem 5rem;align-items:start}
+.intro h2{font-size:clamp(2rem,3.8vw,3.1rem);line-height:1.1}
+.intro p + p{margin-top:1.1rem}
+@media (max-width:860px){.intro{grid-template-columns:1fr}}
+
+/* ---------- quiénes somos ---------- */
+.about{display:grid;grid-template-columns:5fr 7fr;gap:3rem 5rem}
+.about__title h2{font-size:clamp(2.2rem,4.4vw,3.6rem);line-height:1.06}
+.about__lead{
+  margin-top:1.75rem;font-family:var(--serif);font-style:italic;
+  font-size:clamp(1.25rem,2vw,1.55rem);line-height:1.4;color:var(--black);
+}
+.about__body p{max-width:62ch}
+.about__body p + p{margin-top:1.15rem}
+.about__body strong{color:var(--black);font-weight:500}
+.about__close{
+  margin-top:2rem;padding-top:1.6rem;border-top:1px solid var(--line);
+  font-family:var(--serif);font-size:1.3rem;line-height:1.45;color:var(--black);
+}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+
+.focus__title{margin-top:clamp(3.5rem,7vw,5rem);margin-bottom:1.4rem;font-size:1.5rem}
+.focus{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--black)}
+.focus li{
+  padding:1.4rem 1.5rem 1.6rem 0;border-bottom:1px solid var(--line);
+  font-family:var(--serif);font-size:1.3rem;line-height:1.3;color:var(--black);
+}
+.focus li:nth-child(3n+2),.focus li:nth-child(3n){padding-left:1.5rem;border-left:1px solid var(--line)}
+@media (max-width:860px){
+  .focus{grid-template-columns:1fr 1fr}
+  .focus li{padding-left:0 !important;border-left:0 !important;padding-right:1rem}
+}
+@media (max-width:520px){.focus{grid-template-columns:1fr}}
+.note{
+  margin-top:2.5rem;max-width:68ch;font-family:var(--serif);font-style:italic;
+  font-size:1.2rem;line-height:1.5;color:var(--graphite);
+}
+
+/* ---------- servicios ---------- */
+.svc{border-top:1px solid var(--black)}
+.svc__item{
+  display:grid;grid-template-columns:4fr 8fr;gap:1.5rem 4rem;
+  padding-block:clamp(2.4rem,4.5vw,3.4rem);border-bottom:1px solid var(--line);
+}
+.svc__item h3{font-size:clamp(1.55rem,2.4vw,2rem);line-height:1.15}
+.svc__sub{margin-top:.6rem;font-size:.98rem;color:var(--steel)}
+.svc__desc{max-width:62ch}
+.svc__list{margin-top:1.4rem;columns:2;column-gap:2.5rem}
+.svc__list li{break-inside:avoid;padding:.5rem 0 .5rem 1.25rem;position:relative;border-top:1px solid var(--line)}
+.svc__list li::before{content:"";position:absolute;left:0;top:1.15em;width:7px;height:1px;background:var(--black)}
+.svc__foot{margin-top:1.6rem;display:flex;flex-wrap:wrap;align-items:center;gap:1.25rem 2rem}
+.svc__aside{font-size:.95rem;color:var(--steel);max-width:52ch}
+.tags{margin-top:1.4rem;display:flex;flex-wrap:wrap;gap:.5rem}
+.tags li{
+  font-size:.88rem;line-height:1.2;padding:.45rem .75rem;
+  border:1px solid var(--silver);border-radius:2px;color:var(--graphite);background:var(--white);
+}
+@media (max-width:860px){
+  .svc__item{grid-template-columns:1fr}
+  .svc__list{columns:1}
+}
+
+/* ---------- cómo trabajamos ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:step}
+.steps li{padding:0 2rem 0 0;position:relative}
+.steps li + li{padding-left:2rem;border-left:1px solid var(--line)}
+.steps__n{
+  display:block;font-family:var(--serif);font-size:clamp(3rem,5vw,4.4rem);line-height:1;
+  color:var(--silver);margin-bottom:1.6rem;font-variant-numeric:lining-nums;
+}
+.steps h3{font-size:1.45rem;margin-bottom:.8rem}
+.steps p{font-size:1rem}
+.sign{
+  margin-top:clamp(3.5rem,6vw,5rem);padding-top:2rem;border-top:1px solid var(--line);
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem 1.5rem;
+}
+.sign strong{font-family:var(--serif);font-weight:500;font-size:1.4rem;color:var(--black)}
+.sign em{font-family:var(--serif);font-size:1.2rem;color:var(--steel)}
+@media (max-width:960px){
+  .steps{grid-template-columns:1fr 1fr;row-gap:3rem}
+  .steps li:nth-child(3){padding-left:0;border-left:0}
+}
+@media (max-width:560px){
+  .steps{grid-template-columns:1fr}
+  .steps li,.steps li + li{padding:0;border-left:0}
+  .steps li + li{padding-top:2.5rem;border-top:1px solid var(--line)}
+}
+
+/* ---------- kits (administraciones) ---------- */
+.kits{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:stretch}
+.kit{
+  display:flex;flex-direction:column;
+  border:1px solid var(--silver);padding:clamp(2rem,3.5vw,2.8rem);background:var(--white);
+}
+.kit__scope{font-size:.92rem;color:var(--steel)}
+.kit h3{margin-top:.6rem;font-size:clamp(1.6rem,2.6vw,2.1rem);line-height:1.12}
+@media (min-width:861px){.kit h3{min-height:2.24em}}
+.kit__price{
+  margin-top:1.4rem;padding-block:1.2rem;border-block:1px solid var(--line);
+  font-family:var(--serif);font-size:clamp(2.4rem,4vw,3.2rem);line-height:1;color:var(--black);
+}
+.kit ul{margin-top:1.5rem;flex:1}
+.kit li{padding:.55rem 0 .55rem 1.3rem;position:relative;font-size:.98rem;border-bottom:1px solid var(--line)}
+.kit li:last-child{border-bottom:0}
+.kit li::before{content:"";position:absolute;left:0;top:1.2em;width:7px;height:1px;background:currentColor}
+.kit .btn{margin-top:2rem;align-self:flex-start}
+.kit--dark{background:var(--black);border-color:var(--black);color:rgba(255,255,255,.8)}
+.kit--dark h3,.kit--dark .kit__price{color:var(--white)}
+.kit--dark .kit__scope{color:#A6A6A6}
+.kit--dark .kit__price,.kit--dark li{border-color:var(--line-inv)}
+.kit--dark .btn{background:var(--white);color:var(--black);border-color:var(--white)}
+.kit--dark .btn:hover{background:transparent;color:var(--white)}
+@media (max-width:860px){.kits{grid-template-columns:1fr}}
+
+/* ---------- por qué / diferenciales ---------- */
+.why{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--black)}
+.why li{padding:2rem 2rem 2.2rem 0;border-bottom:1px solid var(--line)}
+.why li:nth-child(3n+2),.why li:nth-child(3n){padding-left:2rem;border-left:1px solid var(--line)}
+.why h3{font-size:1.4rem;margin-bottom:.7rem}
+.why p{font-size:1rem}
+@media (max-width:960px){
+  .why{grid-template-columns:1fr 1fr}
+  .why li{padding-left:0 !important;border-left:0 !important;padding-right:1.5rem}
+}
+@media (max-width:600px){.why{grid-template-columns:1fr}}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:3rem 5rem}
+.split h3{font-size:1.5rem;margin-bottom:1.2rem}
+.split li{padding:.7rem 0;border-top:1px solid var(--line)}
+.split li:last-child{border-bottom:1px solid var(--line)}
+@media (max-width:860px){.split{grid-template-columns:1fr}}
+
+/* ---------- reseñas ---------- */
+.rating{display:flex;align-items:center;gap:.9rem;font-size:.95rem;color:var(--graphite)}
+.rating .g{width:22px;height:22px}
+.stars{display:inline-flex;gap:2px}
+.stars svg{width:15px;height:15px;fill:var(--black)}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.review{
+  background:var(--white);border:1px solid var(--line);padding:2rem;
+  display:flex;flex-direction:column;gap:1rem;
+}
+.review h3{font-size:1.3rem;line-height:1.25}
+.review p{font-size:.98rem;line-height:1.65;flex:1}
+.review footer{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:1.1rem;border-top:1px solid var(--line)}
+.review cite{font-style:normal;font-weight:500;color:var(--black)}
+.review .g{width:18px;height:18px;flex-shrink:0}
+.review--todo{border-style:dashed;color:var(--steel)}
+.reviews__more{margin-top:2.5rem}
+@media (max-width:960px){.reviews{grid-template-columns:1fr}}
+
+/* ---------- banner final ---------- */
+.banner{position:relative;overflow:hidden;padding-block:clamp(6rem,12vw,10rem)}
+.banner .wrap{position:relative;z-index:1}
+.banner p.banner__big{
+  font-family:var(--serif);font-size:clamp(2.1rem,4.8vw,4.2rem);line-height:1.12;color:var(--white);max-width:26ch;
+}
+.banner p.banner__big + p.banner__big{color:#8C8C8C}
+.banner__text{margin-top:2.4rem;max-width:56ch;font-size:1.15rem}
+.banner__motto{margin-top:2.4rem;font-family:var(--serif);font-style:italic;font-size:clamp(1.4rem,2.4vw,1.9rem);color:var(--white)}
+.banner__sig{margin-top:.4rem;font-size:.95rem;letter-spacing:.06em;color:#A6A6A6}
+.banner .btn{margin-top:2.8rem}
+.banner .mark{
+  position:absolute;right:-4vw;bottom:-10%;width:min(42vw,560px);height:auto;opacity:.35;z-index:0;
+}
+.banner .mark .lg-m{fill:#3C3C3C}.banner .mark .lg-l{fill:#262626}
+
+/* ---------- contacto ---------- */
+.contact{display:grid;grid-template-columns:5fr 7fr;gap:3rem 5rem;align-items:start}
+.contact h2{font-size:clamp(2.2rem,4.4vw,3.6rem);line-height:1.06}
+.contact__intro{margin-top:1.4rem;max-width:44ch}
+.channels{margin-top:2.4rem;border-top:1px solid var(--black)}
+.channels li{display:grid;grid-template-columns:7.5rem 1fr;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.channels span{font-size:.92rem;color:var(--steel)}
+.channels a{text-decoration:none;color:var(--black);font-weight:500;word-break:break-word}
+.channels a:hover{text-decoration:underline;text-underline-offset:3px}
+.form{background:var(--mist);padding:clamp(1.75rem,3.5vw,2.8rem)}
+.form h3{font-size:1.6rem}
+.form__hint{margin-top:.5rem;font-size:.95rem;color:var(--steel)}
+.field{margin-top:1.4rem;display:flex;flex-direction:column;gap:.45rem}
+.field label{font-size:.92rem;font-weight:500;color:var(--black)}
+.field input,.field select,.field textarea{
+  font:inherit;font-size:1rem;color:var(--black);background:var(--white);
+  border:1px solid var(--silver);border-radius:2px;padding:.85rem 1rem;width:100%;
+  transition:border-color .2s;
+}
+.field textarea{min-height:130px;resize:vertical}
+.field select{appearance:none;-webkit-appearance:none;cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23000' stroke-width='1.3'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 1rem center;padding-right:2.5rem}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--black)}
+.field--2{display:grid;grid-template-columns:1fr 1fr;gap:0 1rem}
+.field--2 > div{display:flex;flex-direction:column;gap:.45rem}
+.form .btn{margin-top:1.8rem;width:100%;justify-content:center}
+.form__error{margin-top:.8rem;font-size:.92rem;color:var(--black);min-height:1.2em}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+@media (max-width:520px){.field--2{grid-template-columns:1fr;gap:1.4rem}}
+
+/* ---------- footer ---------- */
+.foot{padding-block:4.5rem 2.5rem;font-size:.95rem}
+.foot__top{display:grid;grid-template-columns:5fr 3fr 4fr;gap:2.5rem 4rem}
+.foot .logo{height:46px;width:auto}
+.foot .logo-ar{height:92px;width:auto}
+.foot .logo-ar path{fill:var(--white)}
+.foot__tag{margin-top:1.4rem;max-width:34ch;color:rgba(255,255,255,.7)}
+.foot h4{font-family:var(--sans);font-weight:500;font-size:.92rem;color:var(--white);margin-bottom:1rem}
+.foot li{padding:.3rem 0}
+.foot a{text-decoration:none;color:rgba(255,255,255,.78)}
+.foot a:hover{color:var(--white)}
+.foot__creds li{color:rgba(255,255,255,.7)}
+.foot__bottom{
+  margin-top:3.5rem;padding-top:1.6rem;border-top:1px solid var(--line-inv);
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;color:rgba(255,255,255,.5);font-size:.88rem;
+}
+@media (max-width:860px){.foot__top{grid-template-columns:1fr}}
+
+/* ---------- WhatsApp flotante ---------- */
+.wa-float{
+  position:fixed;right:clamp(1rem,2.5vw,1.75rem);bottom:clamp(1rem,2.5vw,1.75rem);z-index:40;
+  width:58px;height:58px;border-radius:50%;background:var(--black);color:var(--white);
+  display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.22);
+  transition:transform .25s var(--ease);
+}
+.wa-float:hover{transform:scale(1.06)}
+.wa-float svg{width:28px;height:28px;fill:currentColor}
+
+/* =========================================================
+   Selector de región (index.html)
+   ========================================================= */
+.gate{min-height:100vh;min-height:100svh;display:flex;flex-direction:column}
+.gate__top{padding:clamp(3rem,8vh,5.5rem) var(--gutter) 0;text-align:center}
+.gate__top .logo{height:clamp(54px,8vw,78px);width:auto;margin:0 auto}
+.gate__q{margin-top:clamp(2rem,6vh,3.5rem);font-size:1.05rem;color:var(--steel)}
+.gate__choices{
+  flex:1;display:grid;grid-template-columns:1fr 1fr;
+  max-width:var(--wrap);width:100%;margin:clamp(1.5rem,4vh,2.5rem) auto 0;padding-inline:var(--gutter);
+}
+.choice{
+  position:relative;display:flex;flex-direction:column;justify-content:flex-end;
+  min-height:clamp(300px,48vh,460px);padding:clamp(2rem,4vw,3.25rem);
+  text-decoration:none;color:var(--graphite);border-top:1px solid var(--black);
+  overflow:hidden;isolation:isolate;
+  transition:color .4s var(--ease);
+}
+.choice + .choice{border-left:1px solid var(--line)}
+.choice::before{
+  content:"";position:absolute;inset:0;background:var(--black);z-index:-1;
+  transform:scaleY(0);transform-origin:bottom;transition:transform .5s var(--ease);
+}
+.choice:hover::before,.choice:focus-visible::before{transform:scaleY(1)}
+.choice:hover,.choice:focus-visible{color:rgba(255,255,255,.75)}
+.choice:focus-visible{outline-offset:-3px;outline-color:var(--steel)}
+.choice__name{
+  font-family:var(--serif);font-size:clamp(2.8rem,6vw,5rem);line-height:1;color:var(--black);
+  transition:color .4s var(--ease);
+}
+.choice:hover .choice__name,.choice:focus-visible .choice__name{color:var(--white)}
+.choice__desc{margin-top:1rem;max-width:34ch}
+.choice__go{
+  margin-top:1.8rem;display:inline-flex;align-items:center;gap:.6rem;font-weight:500;color:var(--black);
+  transition:color .4s var(--ease);
+}
+.choice:hover .choice__go,.choice:focus-visible .choice__go{color:var(--white)}
+.choice__go svg{width:22px;height:10px;transition:transform .4s var(--ease)}
+.choice:hover .choice__go svg{transform:translateX(6px)}
+.gate__foot{padding:1.75rem var(--gutter);text-align:center;font-size:.9rem;color:var(--steel)}
+.gate__foot a{text-decoration:none;color:var(--graphite)}
+@media (max-width:760px){
+  .gate__choices{grid-template-columns:1fr}
+  .choice{min-height:240px}
+  .choice + .choice{border-left:0;border-top:1px solid var(--line)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms !important}
+}
+
+</style>
+</head>
+<body data-wa="34614694939">
+
+<a class="sr-only" href="#main">Saltar al contenido</a>
+
+<header class="head">
+  <div class="wrap">
+    <a class="brand" href="index-es.html" aria-label="FIDIAX España, inicio">
+      <svg class="logo" viewBox="0 0 1141 431" role="img" aria-label="FIDIAX"><path class="lg-m" d="M430.4 420.9C421.7 411.7 403.6 398.8 389.1 391.6C361.2 377.6 336.1 373.3 269.0 371.0C223.8 369.5 202.1 366.8 176.7 359.4C118.9 342.6 70.2 306.3 49.1 264.2C41.4 248.9 36.0 229.2 36.0 216.5C36.0 208.2 37.8 207.8 40.5 215.6C43.3 223.9 52.0 239.1 59.9 249.5C91.9 291.4 155.1 323.1 239.5 339.4C252.3 341.9 259.4 343.0 304.0 349.0C316.4 350.7 331.0 353.0 336.5 354.2C371.6 361.4 401.6 378.4 423.2 403.4C429.7 410.9 436.0 420.5 436.0 422.9C436.0 425.0 433.4 424.0 430.4 420.9ZM180.5 310.4C121.4 289.8 80.8 252.6 63.7 203.4C57.0 184.1 55.6 174.4 55.5 148.0C55.5 127.0 55.7 123.4 57.8 114.1C63.9 87.1 74.8 63.4 87.7 49.0C94.4 41.6 101.0 38.8 101.0 43.5C101.0 44.4 98.1 54.8 94.5 66.6C83.0 104.8 80.4 121.8 81.3 151.5C81.8 166.3 82.4 173.1 84.4 182.2C92.4 219.7 111.4 251.6 141.7 278.5C152.4 288.0 173.9 302.8 183.8 307.4C187.2 309.0 190.0 311.0 190.0 311.7C190.0 313.4 188.7 313.3 180.5 310.4ZM157.6 273.0C130.4 244.5 113.3 209.3 108.5 172.0C105.4 148.0 107.6 127.0 115.7 103.5C130.2 61.8 159.7 25.8 192.6 9.9C200.2 6.2 212.4 3.0 213.7 4.4C215.3 6.0 210.3 12.5 196.3 27.3C165.4 59.8 150.1 83.6 139.7 115.1C133.2 134.8 131.5 145.8 131.6 169.0C131.6 187.0 132.0 191.0 134.2 202.0C139.3 226.2 149.6 251.6 162.4 270.9C165.5 275.5 168.0 279.7 168.0 280.2C168.0 282.6 164.5 280.2 157.6 273.0ZM168.3 252.8C153.0 208.8 152.0 160.4 165.4 124.6C180.1 85.6 212.3 51.3 251.2 33.0C270.0 24.2 292.7 18.6 309.5 18.7C321.8 18.7 327.5 20.4 327.5 23.9C327.5 26.1 326.4 26.8 319.0 29.8C276.3 46.7 256.7 56.6 240.2 69.4C191.4 107.1 167.3 158.8 169.3 221.5C169.8 236.0 171.5 251.1 173.7 259.8C174.0 261.3 173.8 262.0 172.8 262.0C172.0 262.0 170.2 258.4 168.3 252.8Z"/><path class="lg-l" d="M420.5 426.3C417.0 423.6 398.8 415.3 390.3 412.6C373.9 407.5 363.7 405.9 343.0 405.3C326.7 404.8 320.6 405.1 306.0 406.9C296.4 408.1 286.2 409.5 283.5 410.0C275.1 411.7 236.2 417.8 225.0 419.2C219.0 419.9 205.3 420.5 193.0 420.5C169.9 420.4 157.0 419.0 136.0 414.3C89.7 404.0 46.2 378.2 23.4 347.4C13.9 334.6 4.0 314.0 4.0 307.0C4.0 302.7 7.9 302.8 10.4 307.1C11.4 308.8 15.6 314.2 19.6 319.0C51.3 356.8 110.2 380.2 190.5 387.0C206.5 388.4 251.9 388.4 269.5 387.1C276.6 386.5 291.0 385.5 301.3 384.9C352.7 381.6 392.6 392.8 422.2 419.0C427.6 423.7 428.8 428.0 424.8 428.0C423.5 428.0 421.6 427.2 420.5 426.3Z"/><path class="lg-w" d="M498.5 426.8C498.2 426.1 498.1 396.5 498.2 361.0L498.5 296.5L550.8 296.2L603.0 296.0L603.0 312.5L603.0 329.0L569.5 329.0L536.0 329.0L536.0 340.5L536.0 352.0L565.5 352.0L595.0 352.0L595.0 368.5L595.0 385.0L565.5 385.0L536.0 385.0L535.8 406.2L535.5 427.5L517.2 427.8C503.2 428.0 498.8 427.8 498.5 426.8ZM615.7 427.3C615.3 427.0 615.0 397.3 615.0 361.3L615.0 296.0L633.5 296.0L652.0 296.0L652.0 362.0L652.0 428.0L634.2 428.0C624.4 428.0 616.0 427.7 615.7 427.3ZM671.0 362.0L671.0 295.8L704.8 296.3C743.0 296.8 748.1 297.5 761.7 304.1C772.5 309.3 780.6 316.2 786.9 325.5C793.9 336.0 796.1 343.6 796.8 358.7C797.5 377.6 794.1 389.5 784.5 402.0C776.1 412.9 762.8 421.3 747.7 425.1C740.4 427.0 735.7 427.3 705.2 427.7L671.0 428.2L671.0 362.0ZM811.0 362.0L811.0 296.0L829.5 296.0L848.0 296.0L848.0 362.0L848.0 428.0L829.5 428.0L811.0 428.0L811.0 362.0ZM854.0 427.2C854.0 426.8 859.4 412.9 866.1 396.5C872.7 380.0 884.0 351.9 891.2 334.0C898.4 316.1 904.9 300.3 905.6 298.8L907.1 296.0L926.9 296.0C941.6 296.0 947.0 296.3 947.7 297.2C948.2 297.9 953.2 309.8 958.7 323.5C964.3 337.2 975.8 365.9 984.4 387.2C993.0 408.5 1000.0 426.4 1000.0 427.0C1000.0 427.6 993.2 428.0 980.1 428.0L960.2 428.0L956.7 418.2L953.2 408.5L927.2 408.2L901.2 408.0L898.1 416.2C896.4 420.8 894.6 425.2 894.1 426.0C893.4 427.2 889.9 427.5 873.6 427.8C862.8 427.9 854.0 427.7 854.0 427.2ZM1003.4 426.3C1003.8 425.4 1012.6 410.5 1023.1 393.3L1042.1 362.0L1023.5 330.5C1013.3 313.2 1004.7 298.3 1004.4 297.5C1003.9 296.2 1006.6 296.0 1025.3 296.0L1046.8 296.0L1058.3 315.8C1064.6 326.6 1070.2 335.4 1070.6 335.4C1071.0 335.3 1076.1 327.1 1081.9 317.3C1087.8 307.4 1093.1 298.6 1093.9 297.7C1095.1 296.2 1097.9 296.0 1116.1 296.0C1129.1 296.0 1137.0 296.4 1137.0 297.0C1137.0 297.5 1135.3 300.8 1133.2 304.2C1131.1 307.7 1122.5 322.1 1114.1 336.3L1098.9 362.0L1118.5 394.1C1129.2 411.7 1138.0 426.5 1138.0 426.9C1138.0 428.0 1096.9 428.3 1095.4 427.3C1094.8 426.8 1089.0 417.6 1082.5 406.7C1072.2 389.4 1070.6 387.1 1069.5 388.7C1068.9 389.7 1063.2 398.9 1057.0 409.2L1045.7 428.0L1024.2 428.0C1004.5 428.0 1002.8 427.9 1003.4 426.3ZM740.1 392.3C753.1 386.1 759.1 376.7 759.2 362.3C759.2 351.5 756.9 345.7 749.6 338.5C741.4 330.4 737.0 328.9 720.8 328.2L708.0 327.8L708.0 362.0L708.0 396.3L720.8 395.8C732.6 395.4 734.2 395.1 740.1 392.3ZM941.0 375.2C941.0 374.8 938.7 368.2 935.9 360.5C933.1 352.8 930.1 344.6 929.3 342.2C928.4 339.8 927.5 338.2 927.1 338.7C926.3 339.6 923.6 346.4 918.2 361.5C916.0 367.6 913.8 373.3 913.5 374.2C912.8 375.9 913.9 376.0 926.9 376.0C934.7 376.0 941.0 375.7 941.0 375.2Z"/></svg>
+      <span class="brand__region">España</span>
+    </a>
+    <button class="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#quienes-somos">Quiénes somos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#como-trabajamos">Cómo trabajamos</a>
+      <a href="#opiniones">Opiniones</a>
+      <a class="btn" href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <svg class="mark" viewBox="0 0 440 432" aria-hidden="true"><path class="lg-m" d="M430.4 420.9C421.7 411.7 403.6 398.8 389.1 391.6C361.2 377.6 336.1 373.3 269.0 371.0C223.8 369.5 202.1 366.8 176.7 359.4C118.9 342.6 70.2 306.3 49.1 264.2C41.4 248.9 36.0 229.2 36.0 216.5C36.0 208.2 37.8 207.8 40.5 215.6C43.3 223.9 52.0 239.1 59.9 249.5C91.9 291.4 155.1 323.1 239.5 339.4C252.3 341.9 259.4 343.0 304.0 349.0C316.4 350.7 331.0 353.0 336.5 354.2C371.6 361.4 401.6 378.4 423.2 403.4C429.7 410.9 436.0 420.5 436.0 422.9C436.0 425.0 433.4 424.0 430.4 420.9ZM180.5 310.4C121.4 289.8 80.8 252.6 63.7 203.4C57.0 184.1 55.6 174.4 55.5 148.0C55.5 127.0 55.7 123.4 57.8 114.1C63.9 87.1 74.8 63.4 87.7 49.0C94.4 41.6 101.0 38.8 101.0 43.5C101.0 44.4 98.1 54.8 94.5 66.6C83.0 104.8 80.4 121.8 81.3 151.5C81.8 166.3 82.4 173.1 84.4 182.2C92.4 219.7 111.4 251.6 141.7 278.5C152.4 288.0 173.9 302.8 183.8 307.4C187.2 309.0 190.0 311.0 190.0 311.7C190.0 313.4 188.7 313.3 180.5 310.4ZM157.6 273.0C130.4 244.5 113.3 209.3 108.5 172.0C105.4 148.0 107.6 127.0 115.7 103.5C130.2 61.8 159.7 25.8 192.6 9.9C200.2 6.2 212.4 3.0 213.7 4.4C215.3 6.0 210.3 12.5 196.3 27.3C165.4 59.8 150.1 83.6 139.7 115.1C133.2 134.8 131.5 145.8 131.6 169.0C131.6 187.0 132.0 191.0 134.2 202.0C139.3 226.2 149.6 251.6 162.4 270.9C165.5 275.5 168.0 279.7 168.0 280.2C168.0 282.6 164.5 280.2 157.6 273.0ZM168.3 252.8C153.0 208.8 152.0 160.4 165.4 124.6C180.1 85.6 212.3 51.3 251.2 33.0C270.0 24.2 292.7 18.6 309.5 18.7C321.8 18.7 327.5 20.4 327.5 23.9C327.5 26.1 326.4 26.8 319.0 29.8C276.3 46.7 256.7 56.6 240.2 69.4C191.4 107.1 167.3 158.8 169.3 221.5C169.8 236.0 171.5 251.1 173.7 259.8C174.0 261.3 173.8 262.0 172.8 262.0C172.0 262.0 170.2 258.4 168.3 252.8Z"/><path class="lg-l" d="M420.5 426.3C417.0 423.6 398.8 415.3 390.3 412.6C373.9 407.5 363.7 405.9 343.0 405.3C326.7 404.8 320.6 405.1 306.0 406.9C296.4 408.1 286.2 409.5 283.5 410.0C275.1 411.7 236.2 417.8 225.0 419.2C219.0 419.9 205.3 420.5 193.0 420.5C169.9 420.4 157.0 419.0 136.0 414.3C89.7 404.0 46.2 378.2 23.4 347.4C13.9 334.6 4.0 314.0 4.0 307.0C4.0 302.7 7.9 302.8 10.4 307.1C11.4 308.8 15.6 314.2 19.6 319.0C51.3 356.8 110.2 380.2 190.5 387.0C206.5 388.4 251.9 388.4 269.5 387.1C276.6 386.5 291.0 385.5 301.3 384.9C352.7 381.6 392.6 392.8 422.2 419.0C427.6 423.7 428.8 428.0 424.8 428.0C423.5 428.0 421.6 427.2 420.5 426.3Z"/></svg>
+    <div class="wrap">
+      <h1><span>Gestión documental.</span><span>Coordinación operativa.</span><span>Control de procesos.</span></h1>
+      <p class="hero__lede">Acompañamos a propietarios, compradores, inversores y agencias inmobiliarias en la gestión y coordinación de sus operaciones, asegurando que cada etapa se encuentre ordenada, documentada y dentro de los plazos previstos.</p>
+      <div class="hero__cta">
+        <a class="btn" data-wa-msg="Hola FIDIAX, quiero hacer una consulta sobre una operación inmobiliaria."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Escríbenos por WhatsApp</a>
+        <a class="link" href="#servicios">Ver servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-label="Qué gestionamos">
+    <div class="ticker__track">
+      <ul>
+        <li>Revisión y control documental</li><li>Contratos de reserva</li><li>Contratos de arras</li><li>Control de cláusulas y condiciones</li><li>Seguimiento de plazos y vencimientos</li><li>Coordinación con notarías</li><li>Preparación de documentación</li><li>Coordinación entre comprador, vendedor y notaría</li><li>Seguimiento hasta la firma</li><li>Cambios de titularidad de suministros</li><li>Gestión de cambios de empresa suministradora</li><li>Seguros de hogar</li><li>Seguros de impago</li><li>Seguimiento de operaciones</li><li>Recordatorios preventivos</li><li>Coordinación entre las partes</li><li>Acompañamiento durante todo el proceso inmobiliario</li>
+      </ul>
+      <ul aria-hidden="true">
+        <li>Revisión y control documental</li><li>Contratos de reserva</li><li>Contratos de arras</li><li>Control de cláusulas y condiciones</li><li>Seguimiento de plazos y vencimientos</li><li>Coordinación con notarías</li><li>Preparación de documentación</li><li>Coordinación entre comprador, vendedor y notaría</li><li>Seguimiento hasta la firma</li><li>Cambios de titularidad de suministros</li><li>Gestión de cambios de empresa suministradora</li><li>Seguros de hogar</li><li>Seguros de impago</li><li>Seguimiento de operaciones</li><li>Recordatorios preventivos</li><li>Coordinación entre las partes</li><li>Acompañamiento durante todo el proceso inmobiliario</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ QUIÉNES SOMOS ============ -->
+  <section class="section" id="quienes-somos">
+    <div class="wrap">
+      <div class="about">
+        <div class="about__title">
+          <h2>Quiénes somos</h2>
+          <p class="about__lead">FIDIAX España es una firma especializada en gestión documental y coordinación operativa inmobiliaria.</p>
+        </div>
+        <div class="about__body">
+          <p>Acompañamos a particulares, inversores, agencias y profesionales del sector inmobiliario en la gestión y seguimiento de sus operaciones, facilitando la coordinación entre las distintas partes y profesionales que intervienen en cada proceso.</p>
+          <p>Nuestra experiencia en empresas reconocidas del sector de inversiones inmobiliarias nos permite comprender las dinámicas reales del mercado, sus tiempos y las necesidades operativas de cada operación.</p>
+          <p>Trabajamos para que cada proceso sea más ordenado, claro y eficiente, ocupándonos del seguimiento documental, los plazos y la coordinación necesaria en cada etapa.</p>
+        </div>
+      </div>
+
+      <h3 class="focus__title">Nuestro enfoque</h3>
+      <ul class="focus">
+        <li>Gestión documental rigurosa</li>
+        <li>Control y seguimiento de plazos</li>
+        <li>Coordinación eficiente entre las partes</li>
+        <li>Prevención de incidencias operativas</li>
+        <li>Comunicación clara y seguimiento continuo</li>
+        <li>Acompañamiento durante todo el proceso</li>
+      </ul>
+      <p class="note">Trabajamos con notarías, agencias, profesionales y colaboradores estratégicos de confianza para facilitar la coordinación y aportar mayor agilidad, organización y tranquilidad a cada operación inmobiliaria.</p>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="section section--mist" id="servicios">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Servicios</h2>
+        <p>Puedes contratar el acompañamiento completo de tu operación o solo la parte que necesites. Cada servicio se adapta a la etapa en la que estás.</p>
+      </div>
+
+      <div class="svc">
+        <article class="svc__item">
+          <h3>Revisión y control documental</h3>
+          <div>
+            <p class="svc__desc">Analizamos y revisamos la documentación clave de la operación para detectar posibles riesgos antes de que se conviertan en contingencias reales.</p>
+            <ul class="svc__list">
+              <li>Contrato de reserva</li><li>Contrato de arras</li><li>Revisión de cláusulas y condiciones</li><li>Control de plazos y vencimientos</li>
+            </ul>
+            <div class="svc__foot"><a class="link" data-wa-msg="Hola FIDIAX, quiero consultar por Revisión y control documental.">Consultar por WhatsApp</a></div>
+          </div>
+        </article>
+
+        <article class="svc__item">
+          <h3>Coordinación de notaría</h3>
+          <div>
+            <p class="svc__desc">Coordinamos con notarías de nuestra confianza en distintas localidades de España para que la firma se realice sin contratiempos.</p>
+            <ul class="svc__list">
+              <li>Preparación de documentación previa</li><li>Seguimiento de plazos y condiciones</li><li>Confirmación de firmas</li><li>Coordinación entre comprador, vendedor y notaría</li>
+            </ul>
+            <div class="svc__foot"><a class="link" data-wa-msg="Hola FIDIAX, quiero consultar por Coordinación de notaría.">Consultar por WhatsApp</a></div>
+          </div>
+        </article>
+
+        <article class="svc__item">
+          <h3>Aviso y control de plazos</h3>
+          <div>
+            <p class="svc__desc">El incumplimiento de plazos es uno de los mayores riesgos en una operación inmobiliaria. Lo prevenimos para evitar pérdidas innecesarias.</p>
+            <ul class="svc__list">
+              <li>Seguimiento activo de fechas clave</li><li>Recordatorios preventivos</li><li>Supervisión de vencimientos contractuales</li>
+            </ul>
+            <div class="svc__foot"><a class="link" data-wa-msg="Hola FIDIAX, quiero consultar por Aviso y control de plazos.">Consultar por WhatsApp</a></div>
+          </div>
+        </article>
+
+        <article class="svc__item">
+          <h3>Cambios de suministros</h3>
+          <div>
+            <p class="svc__desc">A través de nuestro colaborador directo comparamos el mercado y accedemos al mejor precio disponible, simplificando el trámite y evitándote gestiones innecesarias.</p>
+            <ul class="svc__list">
+              <li>Cambio de titularidad</li><li>Cambio de empresa suministradora</li>
+            </ul>
+            <div class="svc__foot"><a class="link" data-wa-msg="Hola FIDIAX, quiero consultar por Cambios de suministros.">Consultar por WhatsApp</a></div>
+          </div>
+        </article>
+
+        <article class="svc__item">
+          <h3>Seguros de hogar</h3>
+          <div>
+            <p class="svc__desc">Te ayudamos a contratar un seguro adaptado a tu propiedad, con opciones competitivas ajustadas a cada perfil.</p>
+            <ul class="svc__list">
+              <li>Protección ante daños</li><li>Coberturas personalizadas</li><li>Asesoramiento claro y transparente</li>
+            </ul>
+            <div class="svc__foot"><a class="link" data-wa-msg="Hola FIDIAX, quiero consultar por Seguros de hogar.">Consultar por WhatsApp</a></div>
+          </div>
+        </article>
+
+        <article class="svc__item">
+          <h3>Seguro de impago</h3>
+          <div>
+            <p class="svc__desc">Protege tu inversión. Una herramienta clave para quienes buscan seguridad y previsibilidad en sus alquileres.</p>
+            <ul class="svc__list">
+              <li>Cobertura de rentas impagadas</li><li>Defensa jurídica</li><li>Evaluación de solvencia</li>
+            </ul>
+            <div class="svc__foot"><a class="link" data-wa-msg="Hola FIDIAX, quiero consultar por Seguro de impago.">Consultar por WhatsApp</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CÓMO TRABAJAMOS ============ -->
+  <section class="section" id="como-trabajamos">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Cómo trabajamos</h2>
+        <p>Cuatro etapas para que cada documento, cada plazo y cada gestión avancen en orden, desde el primer análisis hasta la firma.</p>
+      </div>
+      <ol class="steps">
+        <li><span class="steps__n">01</span><h3>Analizamos</h3><p>Revisamos la información y documentación de la operación para identificar qué se necesita, qué falta y cuáles son los próximos pasos.</p></li>
+        <li><span class="steps__n">02</span><h3>Organizamos</h3><p>Ordenamos la documentación, plazos y tareas necesarias para que cada etapa avance de forma clara y coordinada.</p></li>
+        <li><span class="steps__n">03</span><h3>Coordinamos</h3><p>Conectamos a las partes y profesionales involucrados: compradores, vendedores, agencias, notarías, aseguradoras y proveedores.</p></li>
+        <li><span class="steps__n">04</span><h3>Hacemos seguimiento</h3><p>Controlamos fechas, documentación y gestiones hasta la finalización de la operación, manteniendo informadas a las partes.</p></li>
+      </ol>
+      <div class="sign"><strong>FIDIAX España</strong><em>Gestión documental y coordinación operativa inmobiliaria.</em></div>
+    </div>
+  </section>
+
+  <!-- ============ PARA QUIÉN ============ -->
+  <section class="section section--mist">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>No somos una gestoría tradicional</h2>
+        <p>Somos un partner estratégico de control operativo en operaciones inmobiliarias. No solo gestionamos trámites: gestionamos seguridad y control en cada operación.</p>
+      </div>
+      <div class="split">
+        <div>
+          <h3>A quién acompañamos</h3>
+          <ul>
+            <li>Propietarios</li><li>Compradores</li><li>Inversores</li><li>Agencias inmobiliarias</li>
+            <li>Cualquier persona o entidad que necesite soporte y control en una operación inmobiliaria</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Qué nos diferencia</h3>
+          <ul>
+            <li>Experiencia en el sector de inversiones inmobiliarias</li><li>Atención personalizada</li><li>Colaboradores estratégicos de confianza</li><li>Enfoque preventivo y acompañamiento continuo</li><li>Servicio completo o por partes, según lo que necesites</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OPINIONES ============ -->
+  <section class="section" id="opiniones">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="rating"><svg class="g" viewBox="0 0 24 24" role="img" aria-label="Google"><path fill="#777" d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg><span class="stars" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg></span><span>Reseñas de Google</span></div>
+      </div>
+      <div class="reviews">
+        <article class="review">
+          <span class="stars" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg></span>
+          <h3>Highly recommended</h3>
+          <p lang="en">Great service throughout my property purchase in Barcelona. As a U.S.-based buyer, it was very helpful to have a team managing the documentation, deadlines, and coordination with the notary. Everything was handled professionally and the communication was clear. Highly recommended.</p>
+          <footer><cite>Kevin Gonzalez</cite><svg class="g" viewBox="0 0 24 24" role="img" aria-label="Google"><path fill="#777" d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></footer>
+        </article>
+        <article class="review">
+          <span class="stars" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg></span>
+          <h3>Excelente experiencia</h3>
+          <p>Excelente experiencia. El equipo gestionó de forma muy eficiente todo el proceso de la compraventa de mi piso en Madrid: control y revisión de la documentación, gestión de la reserva y del contrato de arras, y coordinación con la notaría hasta la firma. Siempre estuvieron disponibles para resolver dudas y mantenerme informada en cada etapa. Todo el proceso fue ágil, transparente y muy bien organizado. Sin duda, un servicio altamente recomendable.</p>
+          <footer><cite>Rocío Vargas</cite><svg class="g" viewBox="0 0 24 24" role="img" aria-label="Google"><path fill="#777" d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></footer>
+        </article>
+        <article class="review">
+          <span class="stars" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg></span>
+          <h3 lang="it">L'esperienza ha superato le mie aspettative</h3>
+          <p lang="it">Con molta paura, compro il mio appartamento ad Alicante. Il team è attento, professionale e meticoloso. Ho deciso di fare l'intero processo dalla revisione della documentazione, alla firma del contratto di locazione e al coordinamento del notaio. Sicuramente ripeterò! È stata la decisione migliore, mi sono sentita accompagnata durante tutto il processo. Tutto è andato più veloce di quanto pensassi. Lo raccomando per evitare ogni tipo di rischio.</p>
+          <footer><cite>Virginia Vazano</cite><svg class="g" viewBox="0 0 24 24" role="img" aria-label="Google"><path fill="#777" d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></footer>
+        </article>
+      </div>
+      <!-- COMPLETAR: link al perfil de Google de FIDIAX España (si está vacío, no se muestra) -->
+      <p class="reviews__more"><a class="link" href="" target="_blank" rel="noopener">Ver todas las reseñas en Google</a></p>
+    </div>
+  </section>
+
+  <!-- ============ BANNER FINAL ============ -->
+  <section class="banner inv">
+    <svg class="mark" viewBox="0 0 440 432" aria-hidden="true"><path class="lg-m" d="M430.4 420.9C421.7 411.7 403.6 398.8 389.1 391.6C361.2 377.6 336.1 373.3 269.0 371.0C223.8 369.5 202.1 366.8 176.7 359.4C118.9 342.6 70.2 306.3 49.1 264.2C41.4 248.9 36.0 229.2 36.0 216.5C36.0 208.2 37.8 207.8 40.5 215.6C43.3 223.9 52.0 239.1 59.9 249.5C91.9 291.4 155.1 323.1 239.5 339.4C252.3 341.9 259.4 343.0 304.0 349.0C316.4 350.7 331.0 353.0 336.5 354.2C371.6 361.4 401.6 378.4 423.2 403.4C429.7 410.9 436.0 420.5 436.0 422.9C436.0 425.0 433.4 424.0 430.4 420.9ZM180.5 310.4C121.4 289.8 80.8 252.6 63.7 203.4C57.0 184.1 55.6 174.4 55.5 148.0C55.5 127.0 55.7 123.4 57.8 114.1C63.9 87.1 74.8 63.4 87.7 49.0C94.4 41.6 101.0 38.8 101.0 43.5C101.0 44.4 98.1 54.8 94.5 66.6C83.0 104.8 80.4 121.8 81.3 151.5C81.8 166.3 82.4 173.1 84.4 182.2C92.4 219.7 111.4 251.6 141.7 278.5C152.4 288.0 173.9 302.8 183.8 307.4C187.2 309.0 190.0 311.0 190.0 311.7C190.0 313.4 188.7 313.3 180.5 310.4ZM157.6 273.0C130.4 244.5 113.3 209.3 108.5 172.0C105.4 148.0 107.6 127.0 115.7 103.5C130.2 61.8 159.7 25.8 192.6 9.9C200.2 6.2 212.4 3.0 213.7 4.4C215.3 6.0 210.3 12.5 196.3 27.3C165.4 59.8 150.1 83.6 139.7 115.1C133.2 134.8 131.5 145.8 131.6 169.0C131.6 187.0 132.0 191.0 134.2 202.0C139.3 226.2 149.6 251.6 162.4 270.9C165.5 275.5 168.0 279.7 168.0 280.2C168.0 282.6 164.5 280.2 157.6 273.0ZM168.3 252.8C153.0 208.8 152.0 160.4 165.4 124.6C180.1 85.6 212.3 51.3 251.2 33.0C270.0 24.2 292.7 18.6 309.5 18.7C321.8 18.7 327.5 20.4 327.5 23.9C327.5 26.1 326.4 26.8 319.0 29.8C276.3 46.7 256.7 56.6 240.2 69.4C191.4 107.1 167.3 158.8 169.3 221.5C169.8 236.0 171.5 251.1 173.7 259.8C174.0 261.3 173.8 262.0 172.8 262.0C172.0 262.0 170.2 258.4 168.3 252.8Z"/><path class="lg-l" d="M420.5 426.3C417.0 423.6 398.8 415.3 390.3 412.6C373.9 407.5 363.7 405.9 343.0 405.3C326.7 404.8 320.6 405.1 306.0 406.9C296.4 408.1 286.2 409.5 283.5 410.0C275.1 411.7 236.2 417.8 225.0 419.2C219.0 419.9 205.3 420.5 193.0 420.5C169.9 420.4 157.0 419.0 136.0 414.3C89.7 404.0 46.2 378.2 23.4 347.4C13.9 334.6 4.0 314.0 4.0 307.0C4.0 302.7 7.9 302.8 10.4 307.1C11.4 308.8 15.6 314.2 19.6 319.0C51.3 356.8 110.2 380.2 190.5 387.0C206.5 388.4 251.9 388.4 269.5 387.1C276.6 386.5 291.0 385.5 301.3 384.9C352.7 381.6 392.6 392.8 422.2 419.0C427.6 423.7 428.8 428.0 424.8 428.0C423.5 428.0 421.6 427.2 420.5 426.3Z"/></svg>
+    <div class="wrap">
+      <p class="banner__big">Una propiedad es una inversión.</p>
+      <p class="banner__big">Una operación inmobiliaria es un proceso.</p>
+      <p class="banner__text">FIDIAX te acompaña para que cada documento, cada plazo y cada gestión estén donde tienen que estar.</p>
+      <a class="btn" href="#contacto">Contáctanos</a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section" id="contacto">
+    <div class="wrap contact">
+      <div>
+        <h2>Contáctanos</h2>
+        <p class="contact__intro">Cuéntanos en qué etapa está tu operación y te respondemos por WhatsApp.</p>
+        <ul class="channels">
+          <li><span>WhatsApp</span><a data-wa-msg="Hola FIDIAX, quiero hacer una consulta.">+34 614 694 939</a></li>
+          <li><span>Email</span><a href="mailto:info@fidiax.com">info@fidiax.com</a></li>
+          <li><span>Instagram</span><a href="https://www.instagram.com/fidiax_/" target="_blank" rel="noopener">@fidiax_</a></li>
+          <!-- COMPLETAR: LinkedIn (si el href está vacío, la fila no se muestra) -->
+          <li class="slot-li"><span>LinkedIn</span><a href="" target="_blank" rel="noopener">FIDIAX España</a></li>
+        </ul>
+      </div>
+
+      <form class="form" id="wa-form" novalidate
+            data-template="Hola FIDIAX, soy {nombre}{perfil}. Quiero consultar sobre {tema}.&#10;&#10;{mensaje}"
+            data-error="Completa tu nombre y tu consulta para enviarla.">
+        <h3>Envíanos tu consulta</h3>
+        <p class="form__hint">Al enviar se abre WhatsApp con tu mensaje listo.</p>
+        <div class="field">
+          <label for="f-nombre">Nombre</label>
+          <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
+        </div>
+        <div class="field field--2">
+          <div>
+            <label for="f-perfil">Soy</label>
+            <select id="f-perfil" name="perfil">
+              <option value="">Selecciona una opción</option>
+              <option>Propietario</option><option>Comprador</option><option>Inversor</option><option>Agencia inmobiliaria</option><option>Profesional del sector</option>
+            </select>
+          </div>
+          <div>
+            <label for="f-tema">Consulta sobre</label>
+            <select id="f-tema" name="tema">
+              <option value="">Selecciona un servicio</option>
+              <option>Revisión y control documental</option><option>Coordinación de notaría</option><option>Aviso y control de plazos</option><option>Cambios de suministros</option><option>Seguros de hogar</option><option>Seguro de impago</option><option>Acompañamiento completo de la operación</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-mensaje">Tu consulta</label>
+          <textarea id="f-mensaje" name="mensaje" required placeholder="Ej.: Estoy comprando un piso en Valencia y tengo que firmar las arras la semana que viene."></textarea>
+        </div>
+        <button class="btn" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Enviar por WhatsApp</button>
+        <p class="form__error" role="alert"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot inv">
+  <div class="wrap">
+    <div class="foot__top">
+      <div>
+        <svg class="logo" viewBox="0 0 1141 431" role="img" aria-label="FIDIAX"><path class="lg-m" d="M430.4 420.9C421.7 411.7 403.6 398.8 389.1 391.6C361.2 377.6 336.1 373.3 269.0 371.0C223.8 369.5 202.1 366.8 176.7 359.4C118.9 342.6 70.2 306.3 49.1 264.2C41.4 248.9 36.0 229.2 36.0 216.5C36.0 208.2 37.8 207.8 40.5 215.6C43.3 223.9 52.0 239.1 59.9 249.5C91.9 291.4 155.1 323.1 239.5 339.4C252.3 341.9 259.4 343.0 304.0 349.0C316.4 350.7 331.0 353.0 336.5 354.2C371.6 361.4 401.6 378.4 423.2 403.4C429.7 410.9 436.0 420.5 436.0 422.9C436.0 425.0 433.4 424.0 430.4 420.9ZM180.5 310.4C121.4 289.8 80.8 252.6 63.7 203.4C57.0 184.1 55.6 174.4 55.5 148.0C55.5 127.0 55.7 123.4 57.8 114.1C63.9 87.1 74.8 63.4 87.7 49.0C94.4 41.6 101.0 38.8 101.0 43.5C101.0 44.4 98.1 54.8 94.5 66.6C83.0 104.8 80.4 121.8 81.3 151.5C81.8 166.3 82.4 173.1 84.4 182.2C92.4 219.7 111.4 251.6 141.7 278.5C152.4 288.0 173.9 302.8 183.8 307.4C187.2 309.0 190.0 311.0 190.0 311.7C190.0 313.4 188.7 313.3 180.5 310.4ZM157.6 273.0C130.4 244.5 113.3 209.3 108.5 172.0C105.4 148.0 107.6 127.0 115.7 103.5C130.2 61.8 159.7 25.8 192.6 9.9C200.2 6.2 212.4 3.0 213.7 4.4C215.3 6.0 210.3 12.5 196.3 27.3C165.4 59.8 150.1 83.6 139.7 115.1C133.2 134.8 131.5 145.8 131.6 169.0C131.6 187.0 132.0 191.0 134.2 202.0C139.3 226.2 149.6 251.6 162.4 270.9C165.5 275.5 168.0 279.7 168.0 280.2C168.0 282.6 164.5 280.2 157.6 273.0ZM168.3 252.8C153.0 208.8 152.0 160.4 165.4 124.6C180.1 85.6 212.3 51.3 251.2 33.0C270.0 24.2 292.7 18.6 309.5 18.7C321.8 18.7 327.5 20.4 327.5 23.9C327.5 26.1 326.4 26.8 319.0 29.8C276.3 46.7 256.7 56.6 240.2 69.4C191.4 107.1 167.3 158.8 169.3 221.5C169.8 236.0 171.5 251.1 173.7 259.8C174.0 261.3 173.8 262.0 172.8 262.0C172.0 262.0 170.2 258.4 168.3 252.8Z"/><path class="lg-l" d="M420.5 426.3C417.0 423.6 398.8 415.3 390.3 412.6C373.9 407.5 363.7 405.9 343.0 405.3C326.7 404.8 320.6 405.1 306.0 406.9C296.4 408.1 286.2 409.5 283.5 410.0C275.1 411.7 236.2 417.8 225.0 419.2C219.0 419.9 205.3 420.5 193.0 420.5C169.9 420.4 157.0 419.0 136.0 414.3C89.7 404.0 46.2 378.2 23.4 347.4C13.9 334.6 4.0 314.0 4.0 307.0C4.0 302.7 7.9 302.8 10.4 307.1C11.4 308.8 15.6 314.2 19.6 319.0C51.3 356.8 110.2 380.2 190.5 387.0C206.5 388.4 251.9 388.4 269.5 387.1C276.6 386.5 291.0 385.5 301.3 384.9C352.7 381.6 392.6 392.8 422.2 419.0C427.6 423.7 428.8 428.0 424.8 428.0C423.5 428.0 421.6 427.2 420.5 426.3Z"/><path class="lg-w" d="M498.5 426.8C498.2 426.1 498.1 396.5 498.2 361.0L498.5 296.5L550.8 296.2L603.0 296.0L603.0 312.5L603.0 329.0L569.5 329.0L536.0 329.0L536.0 340.5L536.0 352.0L565.5 352.0L595.0 352.0L595.0 368.5L595.0 385.0L565.5 385.0L536.0 385.0L535.8 406.2L535.5 427.5L517.2 427.8C503.2 428.0 498.8 427.8 498.5 426.8ZM615.7 427.3C615.3 427.0 615.0 397.3 615.0 361.3L615.0 296.0L633.5 296.0L652.0 296.0L652.0 362.0L652.0 428.0L634.2 428.0C624.4 428.0 616.0 427.7 615.7 427.3ZM671.0 362.0L671.0 295.8L704.8 296.3C743.0 296.8 748.1 297.5 761.7 304.1C772.5 309.3 780.6 316.2 786.9 325.5C793.9 336.0 796.1 343.6 796.8 358.7C797.5 377.6 794.1 389.5 784.5 402.0C776.1 412.9 762.8 421.3 747.7 425.1C740.4 427.0 735.7 427.3 705.2 427.7L671.0 428.2L671.0 362.0ZM811.0 362.0L811.0 296.0L829.5 296.0L848.0 296.0L848.0 362.0L848.0 428.0L829.5 428.0L811.0 428.0L811.0 362.0ZM854.0 427.2C854.0 426.8 859.4 412.9 866.1 396.5C872.7 380.0 884.0 351.9 891.2 334.0C898.4 316.1 904.9 300.3 905.6 298.8L907.1 296.0L926.9 296.0C941.6 296.0 947.0 296.3 947.7 297.2C948.2 297.9 953.2 309.8 958.7 323.5C964.3 337.2 975.8 365.9 984.4 387.2C993.0 408.5 1000.0 426.4 1000.0 427.0C1000.0 427.6 993.2 428.0 980.1 428.0L960.2 428.0L956.7 418.2L953.2 408.5L927.2 408.2L901.2 408.0L898.1 416.2C896.4 420.8 894.6 425.2 894.1 426.0C893.4 427.2 889.9 427.5 873.6 427.8C862.8 427.9 854.0 427.7 854.0 427.2ZM1003.4 426.3C1003.8 425.4 1012.6 410.5 1023.1 393.3L1042.1 362.0L1023.5 330.5C1013.3 313.2 1004.7 298.3 1004.4 297.5C1003.9 296.2 1006.6 296.0 1025.3 296.0L1046.8 296.0L1058.3 315.8C1064.6 326.6 1070.2 335.4 1070.6 335.4C1071.0 335.3 1076.1 327.1 1081.9 317.3C1087.8 307.4 1093.1 298.6 1093.9 297.7C1095.1 296.2 1097.9 296.0 1116.1 296.0C1129.1 296.0 1137.0 296.4 1137.0 297.0C1137.0 297.5 1135.3 300.8 1133.2 304.2C1131.1 307.7 1122.5 322.1 1114.1 336.3L1098.9 362.0L1118.5 394.1C1129.2 411.7 1138.0 426.5 1138.0 426.9C1138.0 428.0 1096.9 428.3 1095.4 427.3C1094.8 426.8 1089.0 417.6 1082.5 406.7C1072.2 389.4 1070.6 387.1 1069.5 388.7C1068.9 389.7 1063.2 398.9 1057.0 409.2L1045.7 428.0L1024.2 428.0C1004.5 428.0 1002.8 427.9 1003.4 426.3ZM740.1 392.3C753.1 386.1 759.1 376.7 759.2 362.3C759.2 351.5 756.9 345.7 749.6 338.5C741.4 330.4 737.0 328.9 720.8 328.2L708.0 327.8L708.0 362.0L708.0 396.3L720.8 395.8C732.6 395.4 734.2 395.1 740.1 392.3ZM941.0 375.2C941.0 374.8 938.7 368.2 935.9 360.5C933.1 352.8 930.1 344.6 929.3 342.2C928.4 339.8 927.5 338.2 927.1 338.7C926.3 339.6 923.6 346.4 918.2 361.5C916.0 367.6 913.8 373.3 913.5 374.2C912.8 375.9 913.9 376.0 926.9 376.0C934.7 376.0 941.0 375.7 941.0 375.2Z"/></svg>
+        <p class="foot__tag">Gestión documental y coordinación operativa inmobiliaria.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#quienes-somos">Quiénes somos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#como-trabajamos">Cómo trabajamos</a></li>
+          <li><a href="#opiniones">Opiniones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a data-wa-msg="Hola FIDIAX, quiero hacer una consulta.">WhatsApp +34 614 694 939</a></li>
+          <li><a href="mailto:info@fidiax.com">info@fidiax.com</a></li>
+          <li><a href="https://www.instagram.com/fidiax_/" target="_blank" rel="noopener">Instagram @fidiax_</a></li>
+          <li class="slot-li"><a href="" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bottom">
+      <span>© <span data-year>2026</span> FIDIAX España</span>
+      <a href="index.html">Cambiar de región</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa-msg="Hola FIDIAX, quiero hacer una consulta." aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+
+<script>
+(function () {
+  var body = document.body;
+  var number = body.getAttribute('data-wa'); // número sin + ni espacios
+
+  function waUrl(text) {
+    return 'https://wa.me/' + number + (text ? '?text=' + encodeURIComponent(text) : '');
+  }
+
+  /* Links a WhatsApp con mensaje armado: <a data-wa-msg="..."> */
+  if (number) {
+    document.querySelectorAll('[data-wa-msg]').forEach(function (a) {
+      a.href = waUrl(a.getAttribute('data-wa-msg'));
+      a.target = '_blank';
+      a.rel = 'noopener';
+    });
+  }
+
+  /* Header con línea al hacer scroll */
+  var head = document.querySelector('.head');
+  if (head) {
+    var onScroll = function () { head.classList.toggle('is-scrolled', window.scrollY > 8); };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
+  /* Menú mobile */
+  var burger = document.querySelector('.burger');
+  var nav = document.getElementById('nav');
+  if (burger && nav) {
+    var setOpen = function (open) {
+      nav.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+      body.classList.toggle('nav-open', open);
+    };
+    burger.addEventListener('click', function () { setOpen(!nav.classList.contains('is-open')); });
+    nav.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { setOpen(false); }); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+  }
+
+  /* Formulario de consulta -> WhatsApp */
+  var form = document.getElementById('wa-form');
+  if (form && number) {
+    var tpl = form.getAttribute('data-template'); // usa {nombre} {tema} {mensaje} {perfil}
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var get = function (n) { var el = form.elements[n]; return el ? el.value.trim() : ''; };
+      var err = form.querySelector('.form__error');
+      if (!get('nombre') || !get('mensaje')) {
+        err.textContent = form.getAttribute('data-error');
+        (get('nombre') ? form.elements['mensaje'] : form.elements['nombre']).focus();
+        return;
+      }
+      err.textContent = '';
+      var text = tpl
+        .replace('{nombre}', get('nombre'))
+        .replace('{perfil}', get('perfil') ? ' (' + get('perfil').toLowerCase() + ')' : '')
+        .replace('{tema}', get('tema') || 'una consulta general')
+        .replace('{mensaje}', get('mensaje'));
+      window.open(waUrl(text), '_blank', 'noopener');
+    });
+  }
+
+  /* Año del footer */
+  document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+})();
+</script>
+</body>
+</html>
