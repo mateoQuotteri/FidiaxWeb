@@ -22,7 +22,7 @@ Sitio estático (HTML + CSS + JS, sin dependencias) listo para GitHub Pages.
 ## Diseño
 
 - Tipografías: **Fraunces** (títulos) y **Manrope** (texto), las mismas de Estudio POI. Detalles en **IBM Plex Mono**.
-- Paleta en grises: fondo `#D8D8D5`, secciones alternadas `#CACAC6`, bloques oscuros `#3A3A3A`. Se cambian en `css/styles.css` → `:root`.
+- Paleta en grises (fondo `#D8D8D5`, alternadas `#CACAC6`, bloques oscuros `#3A3A3A`) con acento celeste (`#7DB9E0` y `#2F78AE` para texto). Los grises están en el primer `:root` de `css/styles.css`; el celeste, en el bloque "ACENTO CELESTE" al final del mismo archivo.
 - Animaciones: sello giratorio con el isotipo en el hero, cinta de servicios en movimiento, aparición de secciones al bajar, línea de "Cómo trabajamos" que se completa paso a paso y carrusel de opiniones con avance automático. Si el visitante tiene activado "reducir movimiento" en su dispositivo, se desactivan.
 
 ## Publicar en GitHub Pages

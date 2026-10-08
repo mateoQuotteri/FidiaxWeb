@@ -117,3 +117,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const anio = document.getElementById('anio');
   if (anio) anio.textContent = new Date().getFullYear();
 });
+
+// Barra celeste de progreso de lectura
+document.addEventListener('DOMContentLoaded', () => {
+  if (!document.querySelector('.nav')) return;
+  const barra = document.createElement('div');
+  barra.className = 'progreso';
+  document.body.appendChild(barra);
+  const actualizar = () => {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    barra.style.width = (max > 0 ? scrollY / max * 100 : 0) + '%';
+  };
+  addEventListener('scroll', actualizar, { passive: true });
+  actualizar();
+});

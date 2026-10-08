@@ -300,3 +300,111 @@ body.nav-abierto{overflow:hidden}
 @media (max-width:620px){.seccion{padding:5rem 0}.contenedor,.nav__in,.hero__in{padding-left:1.3rem;padding-right:1.3rem}}
 .contacto>*,.panel__grid>*,.about>*{min-width:0}
 @media (max-width:520px){.btn{white-space:normal;text-align:center}}
+
+/* =================================================================
+   ACENTO CELESTE — detalles que dan vida a la paleta en grises
+   Cambiar los tonos acá cambia todo el sitio.
+   ================================================================= */
+:root{
+  --celeste:      #7DB9E0;   /* celeste principal (sobre fondos oscuros) */
+  --celeste-hondo:#2F78AE;   /* azul para texto sobre gris claro (buen contraste) */
+  --celeste-suave:rgba(125,185,224,.18);
+}
+
+/* Palabras destacadas en títulos */
+h1 em,h2 em,.cierre__frase em{font-style:italic;color:var(--celeste-hondo)}
+.cierre__frase em,.seccion--panel h2 em{color:var(--celeste)}
+
+/* Etiquetas pequeñas (eyebrows) */
+.eyebrow{color:var(--celeste-hondo)}
+.eyebrow--claro{color:var(--celeste)}
+.eyebrow::before{content:"";display:inline-block;width:18px;height:1.5px;background:currentColor;vertical-align:middle;margin-right:.6rem;transform:translateY(-1px)}
+.declaracion .eyebrow::before{display:none}
+
+/* Brillo celeste suave detrás del sello y en el selector */
+.hero::before,.selector::before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(125,185,224,.38),transparent 65%);right:-120px;top:50%;transform:translateY(-50%);pointer-events:none;animation:respirar 8s ease-in-out infinite}
+.selector::before{right:auto;left:50%;top:42%;transform:translate(-50%,-50%);width:720px;height:720px;animation:none;opacity:.8}
+@keyframes respirar{50%{opacity:.6;transform:translateY(-50%) scale(1.08)}}
+
+/* Sello */
+.sello__texto{fill:var(--celeste-hondo)}
+.sello__anillo{border-color:var(--celeste)}
+.sello__aro2{stroke:var(--celeste-hondo);opacity:.5}
+
+/* Menú */
+.nav__links a::after{background:var(--celeste-hondo)}
+.nav__links a.activo{color:var(--celeste-hondo)}
+.marca__region{color:var(--celeste-hondo)}
+
+/* Botones: hover con celeste */
+.btn--oscuro:hover{background:var(--celeste-hondo);box-shadow:0 10px 24px rgba(47,120,174,.32)}
+.btn--linea:hover{border-color:var(--celeste-hondo);color:var(--celeste-hondo)}
+.btn--claro:hover{background:var(--celeste);color:var(--tinta)}
+
+/* Cinta en movimiento */
+.cinta{border-top:2px solid var(--celeste)}
+.cinta__grupo span::after{background:var(--celeste)}
+
+/* Enfoque, servicios y motivos */
+.enfoque svg{stroke:var(--celeste-hondo)}
+.enfoque li:hover,.items li:hover{background:#EEF4F8}
+.tabs__btn small{color:var(--celeste-hondo)}
+.tabs__btn.activo{border-color:var(--celeste-hondo)}
+.panel__cierre{color:var(--celeste-hondo)}
+.items li{position:relative}
+.items li::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--celeste);transform:scaleY(0);transition:transform .3s var(--ease)}
+.items li:hover::before{transform:scaleY(1)}
+.motivo svg .acento{stroke:var(--celeste-hondo)}
+.motivo svg{transition:transform .4s var(--ease)}
+.motivo:hover svg{transform:translateY(-4px)}
+
+/* Cómo trabajamos: la línea se llena en celeste */
+.stepper__relleno{background:var(--celeste)}
+.paso.activo .paso__punto{background:var(--celeste);border-color:var(--celeste);box-shadow:0 0 0 6px rgba(125,185,224,.18)}
+.paso.activo .paso__num{color:var(--celeste)}
+
+/* Kits */
+.kit__tag{color:var(--celeste-hondo);border-color:var(--celeste-hondo)}
+.kit li::before{background:var(--celeste-hondo)}
+.kit:hover{box-shadow:0 20px 40px rgba(47,120,174,.14)}
+.kit--destacado{border-top:3px solid var(--celeste)}
+.kit--destacado .kit__tag{color:var(--celeste);border-color:var(--celeste)}
+.kit--destacado li::before{background:var(--celeste)}
+
+/* Opiniones */
+.estrellas svg{fill:var(--celeste-hondo)}
+.opinion{border-top:3px solid var(--celeste);transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.opinion:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(0,0,0,.08)}
+.avatar{background:var(--celeste-hondo)}
+.puntos button.activo{background:var(--celeste-hondo)}
+.flecha:hover{border-color:var(--celeste-hondo);background:var(--celeste-suave)}
+.flecha:hover svg{stroke:var(--celeste-hondo)}
+
+/* Cierre */
+.cierre__lema{color:var(--celeste)}
+.cierre{border-top:2px solid var(--celeste)}
+
+/* Contacto */
+.datos svg{stroke:var(--celeste-hondo)}
+.form{border-top:3px solid var(--celeste)}
+.form input:focus,.form select:focus,.form textarea:focus{border-color:var(--celeste-hondo);box-shadow:0 0 0 3px rgba(47,120,174,.18)}
+
+/* Footer */
+.footer{border-top:3px solid var(--celeste)}
+.footer__inst span{color:var(--celeste)}
+.footer a:hover{color:var(--celeste)}
+
+/* WhatsApp flotante: onda celeste */
+.wa::before{border-color:var(--celeste)}
+.wa:hover{background:var(--celeste-hondo)}
+
+/* Selector */
+.selector__texto{color:var(--celeste-hondo);font-weight:600}
+.opcion{border-top:3px solid var(--celeste)}
+.opcion:hover,.opcion:focus-visible{background:var(--celeste-hondo);border-color:var(--celeste-hondo)}
+.opcion:hover span,.opcion:focus-visible span{color:#DCEBF5}
+
+/* Barra de progreso de lectura */
+.progreso{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--celeste-hondo),var(--celeste));z-index:200;transition:width .1s linear}
+
+@media (prefers-reduced-motion:reduce){.hero::before{animation:none}}
